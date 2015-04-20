@@ -10,9 +10,6 @@
 		E4E07B501AE51FD900E3E13A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B4F1AE51FD900E3E13A /* main.m */; };
 		E4E07B531AE51FD900E3E13A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B521AE51FD900E3E13A /* AppDelegate.m */; };
 		E4E07B561AE51FD900E3E13A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B551AE51FD900E3E13A /* ViewController.m */; };
-		E4E07B591AE51FD900E3E13A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4E07B571AE51FD900E3E13A /* Main.storyboard */; };
-		E4E07B5B1AE51FD900E3E13A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E07B5A1AE51FD900E3E13A /* Images.xcassets */; };
-		E4E07B5E1AE51FD900E3E13A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4E07B5C1AE51FD900E3E13A /* LaunchScreen.xib */; };
 		E4E07B6A1AE51FD900E3E13A /* ColstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B691AE51FD900E3E13A /* ColstagramTests.m */; };
 /* End PBXBuildFile section */
 
@@ -34,9 +31,6 @@
 		E4E07B521AE51FD900E3E13A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E4E07B541AE51FD900E3E13A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E4E07B551AE51FD900E3E13A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E4E07B581AE51FD900E3E13A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E4E07B5A1AE51FD900E3E13A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E4E07B5D1AE51FD900E3E13A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E4E07B631AE51FD900E3E13A /* ColstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E07B681AE51FD900E3E13A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4E07B691AE51FD900E3E13A /* ColstagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColstagramTests.m; sourceTree = "<group>"; };
@@ -85,9 +79,6 @@
 				E4E07B521AE51FD900E3E13A /* AppDelegate.m */,
 				E4E07B541AE51FD900E3E13A /* ViewController.h */,
 				E4E07B551AE51FD900E3E13A /* ViewController.m */,
-				E4E07B571AE51FD900E3E13A /* Main.storyboard */,
-				E4E07B5A1AE51FD900E3E13A /* Images.xcassets */,
-				E4E07B5C1AE51FD900E3E13A /* LaunchScreen.xib */,
 				E4E07B4D1AE51FD900E3E13A /* Supporting Files */,
 			);
 			path = Colstagram;
@@ -199,9 +190,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4E07B591AE51FD900E3E13A /* Main.storyboard in Resources */,
-				E4E07B5E1AE51FD900E3E13A /* LaunchScreen.xib in Resources */,
-				E4E07B5B1AE51FD900E3E13A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,25 +230,6 @@
 			targetProxy = E4E07B641AE51FD900E3E13A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E4E07B571AE51FD900E3E13A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E4E07B581AE51FD900E3E13A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E4E07B5C1AE51FD900E3E13A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E4E07B5D1AE51FD900E3E13A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E4E07B6B1AE51FD900E3E13A /* Debug */ = {
