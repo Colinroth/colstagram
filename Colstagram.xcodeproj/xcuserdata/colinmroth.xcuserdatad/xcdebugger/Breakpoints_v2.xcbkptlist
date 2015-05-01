@@ -10,11 +10,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Colstagram/DataSource.m"
+<<<<<<< HEAD
             timestampString = "451274793.969924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
             endingLineNumber = "59"
+=======
+            timestampString = "451875835.729397"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+>>>>>>> custom-table-cell
             landmarkName = "-addRandomData"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +50,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MediaTableViewCell.m"
+<<<<<<< HEAD
             timestampString = "451314173.25368"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
             endingLineNumber = "109"
+=======
+            timestampString = "451875335.785571"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+>>>>>>> custom-table-cell
             landmarkName = "-layoutSubviews"
             landmarkType = "5">
          </BreakpointContent>

@@ -23,6 +23,11 @@
 		E4E07B871AE529D900E3E13A /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4E07B7D1AE529D900E3E13A /* 10.jpg */; };
 		E4E07B8A1AE52A1400E3E13A /* ImageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B891AE52A1400E3E13A /* ImageTableViewController.m */; };
 		E4E07B8C1AE52E9C00E3E13A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4E07B8B1AE52E9C00E3E13A /* Default-568h@2x.png */; };
+		E4E07B8F1AE5DF0B00E3E13A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B8E1AE5DF0B00E3E13A /* User.m */; };
+		E4E07B921AE5DFF800E3E13A /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B911AE5DFF800E3E13A /* Media.m */; };
+		E4E07B951AE5E23700E3E13A /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B941AE5E23700E3E13A /* Comment.m */; };
+		E4E07B981AE5E38100E3E13A /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B971AE5E38100E3E13A /* DataSource.m */; };
+		E4E07B9E1AE6699400E3E13A /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B9D1AE6699400E3E13A /* MediaTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,16 @@
 		E4E07B881AE52A1400E3E13A /* ImageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewController.h; sourceTree = "<group>"; };
 		E4E07B891AE52A1400E3E13A /* ImageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewController.m; sourceTree = "<group>"; };
 		E4E07B8B1AE52E9C00E3E13A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E4E07B8D1AE5DF0B00E3E13A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E4E07B8E1AE5DF0B00E3E13A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E4E07B901AE5DFF800E3E13A /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		E4E07B911AE5DFF800E3E13A /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
+		E4E07B931AE5E23700E3E13A /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		E4E07B941AE5E23700E3E13A /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		E4E07B961AE5E38100E3E13A /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		E4E07B971AE5E38100E3E13A /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		E4E07B9C1AE6699400E3E13A /* MediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaTableViewCell.h; path = ../MediaTableViewCell.h; sourceTree = "<group>"; };
+		E4E07B9D1AE6699400E3E13A /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaTableViewCell.m; path = ../MediaTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +123,16 @@
 				E4E07B551AE51FD900E3E13A /* ViewController.m */,
 				E4E07B881AE52A1400E3E13A /* ImageTableViewController.h */,
 				E4E07B891AE52A1400E3E13A /* ImageTableViewController.m */,
+				E4E07B9C1AE6699400E3E13A /* MediaTableViewCell.h */,
+				E4E07B9D1AE6699400E3E13A /* MediaTableViewCell.m */,
+				E4E07B8D1AE5DF0B00E3E13A /* User.h */,
+				E4E07B8E1AE5DF0B00E3E13A /* User.m */,
+				E4E07B901AE5DFF800E3E13A /* Media.h */,
+				E4E07B911AE5DFF800E3E13A /* Media.m */,
+				E4E07B931AE5E23700E3E13A /* Comment.h */,
+				E4E07B941AE5E23700E3E13A /* Comment.m */,
+				E4E07B961AE5E38100E3E13A /* DataSource.h */,
+				E4E07B971AE5E38100E3E13A /* DataSource.m */,
 				E4E07B4D1AE51FD900E3E13A /* Supporting Files */,
 			);
 			path = Colstagram;
@@ -264,6 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4E07B951AE5E23700E3E13A /* Comment.m in Sources */,
+				E4E07B921AE5DFF800E3E13A /* Media.m in Sources */,
+				E4E07B9E1AE6699400E3E13A /* MediaTableViewCell.m in Sources */,
+				E4E07B981AE5E38100E3E13A /* DataSource.m in Sources */,
+				E4E07B8F1AE5DF0B00E3E13A /* User.m in Sources */,
 				E4E07B561AE51FD900E3E13A /* ViewController.m in Sources */,
 				E4E07B531AE51FD900E3E13A /* AppDelegate.m in Sources */,
 				E4E07B501AE51FD900E3E13A /* main.m in Sources */,
@@ -445,6 +475,7 @@
 				E4E07B6F1AE51FD900E3E13A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4E07B701AE51FD900E3E13A /* Build configuration list for PBXNativeTarget "ColstagramTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +484,7 @@
 				E4E07B721AE51FD900E3E13A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
