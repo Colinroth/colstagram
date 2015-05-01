@@ -50,6 +50,7 @@
             Media *media = [[Media alloc] init];
             media.user = [self randomUser];
             media.image = image;
+            media.caption = [self randomComment].text;
             
             NSUInteger commentCount = arc4random_uniform(10);
             NSMutableArray *randomComments = [NSMutableArray array];
@@ -77,8 +78,10 @@
     NSString *lastName = [self randomStringOfLength:arc4random_uniform(12)];
     user.fullName = [NSString stringWithFormat:@"%@ %@", firstName, lastName];
     
+    
     return user;
 }
+
 
 - (Comment *) randomComment {
     Comment *comment = [[Comment alloc] init];
@@ -91,7 +94,7 @@
     
     for (int i = 0; i <= wordCount; i++) {
         NSString *randomWord = [self randomStringOfLength:arc4random_uniform(12)];
-        [randomSentence appendFormat:@"%@", randomWord];
+        [randomSentence appendFormat:@"%@ ", randomWord];
     }
     
     comment.text = randomSentence;
@@ -111,5 +114,6 @@
     
     return [NSString stringWithString:s];
 }
+
 
 @end

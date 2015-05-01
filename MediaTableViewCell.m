@@ -65,6 +65,7 @@ static NSParagraphStyle *paragraphStyle;
     mutableParagraphStyle.firstLineHeadIndent = 20.0;
     mutableParagraphStyle.tailIndent = -20.0;
     mutableParagraphStyle.paragraphSpacingBefore = 5;
+    paragraphStyle = mutableParagraphStyle;
 }
 
 -(NSAttributedString *) usernameAndCaptionString {
@@ -72,7 +73,8 @@ static NSParagraphStyle *paragraphStyle;
     
     NSString *baseString = [NSString stringWithFormat:@"%@ %@", self.mediaItem.user.userName, self.mediaItem.caption];
     
-    NSMutableAttributedString *mutableUsernameAndCaptionString = [[NSMutableAttributedString alloc] initWithString:baseString attributes:@{NSFontAttributeName: [lightFont fontWithSize:usernameFontSize], NSParagraphStyleAttributeName : paragraphStyle}];
+    NSDictionary *attributesForUsernameAndCaptionString = @{NSFontAttributeName: [lightFont fontWithSize:usernameFontSize], NSParagraphStyleAttributeName : paragraphStyle};
+    NSMutableAttributedString *mutableUsernameAndCaptionString = [[NSMutableAttributedString alloc] initWithString:baseString attributes:attributesForUsernameAndCaptionString];
     
     NSRange usernameRange = [baseString rangeOfString:self.mediaItem.user.userName];
     [mutableUsernameAndCaptionString addAttribute:NSFontAttributeName value:[boldFont fontWithSize:usernameFontSize] range:usernameRange];
@@ -137,5 +139,7 @@ static NSParagraphStyle *paragraphStyle;
     
     return CGRectGetMaxY(layoutCell.commentLabel.frame);
 }
+
+
 
 @end
