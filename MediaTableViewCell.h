@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
-@class Media;
+@class Media, MediaTableViewCell;
+
+@protocol MediaTableViewCellDelgate <NSObject>
+
+-(void) cell:(MediaTableViewCell *)cell didTapImageView: (UIImageView *)imageView;
+-(void) cell:(MediaTableViewCell *)cell didLongPressImageView:(UIImageView *)imageView;
+
+@end
+
 @interface MediaTableViewCell : UITableViewCell
 @property (nonatomic, strong) Media *mediaItem;
+@property (nonatomic, weak) id <MediaTableViewCellDelgate> delegate;
 
 + (CGFloat) heightForMediaItem:(Media *)mediaItem width:(CGFloat)width;
 
