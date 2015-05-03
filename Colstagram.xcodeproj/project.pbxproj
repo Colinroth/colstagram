@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D046EC76B342ED2F176E316 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAC1A885F3F78505347ADF8 /* libPods.a */; };
 		E49665461AF56899009789B9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49665451AF56899009789B9 /* LoginViewController.m */; };
 		E4A8EF311AF46D2B00C58D7F /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4A8EF271AF46D2B00C58D7F /* 1.jpg */; };
 		E4A8EF321AF46D2B00C58D7F /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4A8EF281AF46D2B00C58D7F /* 2.jpg */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6FAC1A885F3F78505347ADF8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		92731BF2DF886192DFC239A9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E49665441AF56899009789B9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		E49665451AF56899009789B9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		E4A8EF271AF46D2B00C58D7F /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		E4E07B971AE5E38100E3E13A /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
 		E4E07B9C1AE6699400E3E13A /* MediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaTableViewCell.h; path = ../MediaTableViewCell.h; sourceTree = "<group>"; };
 		E4E07B9D1AE6699400E3E13A /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaTableViewCell.m; path = ../MediaTableViewCell.m; sourceTree = "<group>"; };
+		E8C8A87F5C1EC723ADBA006A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D046EC76B342ED2F176E316 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +102,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DEF08504DC23EFD7FDC5A54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8C8A87F5C1EC723ADBA006A /* Pods.debug.xcconfig */,
+				92731BF2DF886192DFC239A9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D75DEA00D8ECC34ABAF0C97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FAC1A885F3F78505347ADF8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E4E07B411AE51FD900E3E13A = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +126,8 @@
 				E4E07B4C1AE51FD900E3E13A /* Colstagram */,
 				E4E07B661AE51FD900E3E13A /* ColstagramTests */,
 				E4E07B4B1AE51FD900E3E13A /* Products */,
+				1DEF08504DC23EFD7FDC5A54 /* Pods */,
+				6D75DEA00D8ECC34ABAF0C97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4E07B6D1AE51FD900E3E13A /* Build configuration list for PBXNativeTarget "Colstagram" */;
 			buildPhases = (
+				DE97A3A97BF7A8147E80AA10 /* Check Pods Manifest.lock */,
 				E4E07B461AE51FD900E3E13A /* Sources */,
 				E4E07B471AE51FD900E3E13A /* Frameworks */,
 				E4E07B481AE51FD900E3E13A /* Resources */,
+				A7660CEBC41B9DBDC3F8D29C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,6 +314,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7660CEBC41B9DBDC3F8D29C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE97A3A97BF7A8147E80AA10 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4E07B461AE51FD900E3E13A /* Sources */ = {
@@ -410,6 +469,7 @@
 		};
 		E4E07B6E1AE51FD900E3E13A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8C8A87F5C1EC723ADBA006A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Colstagram/Info.plist;
@@ -420,6 +480,7 @@
 		};
 		E4E07B6F1AE51FD900E3E13A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92731BF2DF886192DFC239A9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Colstagram/Info.plist;
