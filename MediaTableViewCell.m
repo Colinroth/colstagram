@@ -201,7 +201,7 @@ static NSParagraphStyle *paragraphStyle;
     [self.delegate cell:self didTapImageView:self.mediaImageView];
 }
 
--(void) longPressFired: (UILongPressGestureRecognizer *) sender {
+-(void) longPressFired: (UILongPressGestureRecognizer *)sender {
     if (sender.state == UIGestureRecognizerStateBegan) {
         [self.delegate cell:self didLongPressImageView:self.mediaImageView];
     }

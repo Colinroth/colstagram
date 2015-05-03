@@ -66,4 +66,18 @@
         }];
     }
 }
+/*
+#pragma Share Button
+
+- (IBAction)tellFriend:(id)sender
+{
+    NSString *shareText = [NSString stringWithFormat:@"Check out Stories With Friends, a new word game for iPhone!"]; // Share message
+    NSArray *itemsToShare = @[shareText];
+    UIActivityViewController *activityVC =
+    [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
+    activityVC.excludedActivityTypes = @[];
+    
+    [self presentViewController:activityVC animated:YES completion:nil];
+}
+*/ 
 @end
