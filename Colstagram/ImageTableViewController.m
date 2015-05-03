@@ -28,7 +28,15 @@
     [self.refreshControl addTarget:self action:@selector(refreshControlDidFire:) forControlEvents:UIControlEventValueChanged];
     
     [self.tableView registerClass:[MediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
+    [self.refreshControl beginRefreshing];
+    [self.refreshControl endRefreshing];
    }
+
+//make timer
+//start timer
+//begin refreshing
+
+//at end of timer end refreshing
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -126,6 +134,7 @@
                 [self.tableView reloadRowsAtIndexPaths:indexPathsThatChanged withRowAnimation:UITableViewRowAnimationAutomatic];
             }
             [self.tableView endUpdates];
+            
         }
     }
 }
