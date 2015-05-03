@@ -13,7 +13,7 @@
 #import "Comment.h"
 #import "MediaTableViewCell.h"
 #import "MediaFullScreenViewController.h"
-//#import "MediaFullScreenAnimator.h"
+#import "MediaFullScreenAnimator.h"
 
 
 @interface ImageTableViewController () <MediaTableViewCellDelgate, UIViewControllerTransitioningDelegate>
@@ -209,7 +209,7 @@
         [self presentViewController:activityVC animated:YES completion:nil];
     }
 }
-/*
+
 #pragma mark - View Controller Transitioning Delegate
 
 -(id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
@@ -226,7 +226,7 @@
     animator.cellImageView = self.lastTappedImageView;
     return animator;
 }
-*/ 
+
 
 /*
 // Override to support rearranging the table view.
