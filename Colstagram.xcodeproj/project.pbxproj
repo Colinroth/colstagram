@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E49665461AF56899009789B9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49665451AF56899009789B9 /* LoginViewController.m */; };
 		E4A8EF311AF46D2B00C58D7F /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4A8EF271AF46D2B00C58D7F /* 1.jpg */; };
 		E4A8EF321AF46D2B00C58D7F /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4A8EF281AF46D2B00C58D7F /* 2.jpg */; };
 		E4A8EF331AF46D2B00C58D7F /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4A8EF291AF46D2B00C58D7F /* 3.jpg */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E49665441AF56899009789B9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E49665451AF56899009789B9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		E4A8EF271AF46D2B00C58D7F /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		E4A8EF281AF46D2B00C58D7F /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		E4A8EF291AF46D2B00C58D7F /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				E4E07B551AE51FD900E3E13A /* ViewController.m */,
 				E4E07B881AE52A1400E3E13A /* ImageTableViewController.h */,
 				E4E07B891AE52A1400E3E13A /* ImageTableViewController.m */,
+				E49665441AF56899009789B9 /* LoginViewController.h */,
+				E49665451AF56899009789B9 /* LoginViewController.m */,
 				E4E07B9C1AE6699400E3E13A /* MediaTableViewCell.h */,
 				E4E07B9D1AE6699400E3E13A /* MediaTableViewCell.m */,
 				E4E07B8D1AE5DF0B00E3E13A /* User.h */,
@@ -293,6 +298,7 @@
 				E4E07B921AE5DFF800E3E13A /* Media.m in Sources */,
 				E4E07B9E1AE6699400E3E13A /* MediaTableViewCell.m in Sources */,
 				E4E07B981AE5E38100E3E13A /* DataSource.m in Sources */,
+				E49665461AF56899009789B9 /* LoginViewController.m in Sources */,
 				E4E07B8F1AE5DF0B00E3E13A /* User.m in Sources */,
 				E4E07B561AE51FD900E3E13A /* ViewController.m in Sources */,
 				E4E07B531AE51FD900E3E13A /* AppDelegate.m in Sources */,
