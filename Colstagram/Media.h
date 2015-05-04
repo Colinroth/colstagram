@@ -11,10 +11,10 @@
 #import "LikeButton.h"
 
 typedef NS_ENUM(NSInteger, MediaDownloadState) {
-    MediaDownloadStateNeedsImage = 0,
-    MediaDownloadStateDownloadInProgress = 1,
-    MediaDownloadStateNonRecoverableError = 2,
-    MediaDownloadStateHasImage = 3
+    MediaDownloadStateNeedsImage            = 0,
+    MediaDownloadStateDownloadInProgress    = 1,
+    MediaDownloadStateNonRecoverableError   = 2,
+    MediaDownloadStateHasImage              = 3
 };
 
 @class User;

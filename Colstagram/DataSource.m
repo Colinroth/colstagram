@@ -298,7 +298,7 @@
 
 -(void) toggleLikeOnMediaItem:(Media *)mediaItem {
     NSString *urlString = [NSString stringWithFormat:@"media/%@/likes", mediaItem.idNumber];
-    NSDictionary *parameters = @{@"access_token":self.accessToken};
+    NSDictionary *parameters = @{@"access_token": self.accessToken};
     
     if (mediaItem.likeState == LikeStateNotLiked) {
         
