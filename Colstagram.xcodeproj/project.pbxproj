@@ -29,6 +29,7 @@
 		E4B4C9971AF6F9BD00411C3D /* angle-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B4C9911AF6F9BD00411C3D /* angle-mask.png */; };
 		E4B4C9981AF6F9BD00411C3D /* angle-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B4C9921AF6F9BD00411C3D /* angle-mask@2x.png */; };
 		E4B4C99B1AF6FA3500411C3D /* CircleSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B4C99A1AF6FA3500411C3D /* CircleSpinner.m */; };
+		E4DE66BF1AF7908400335AF8 /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DE66BE1AF7908400335AF8 /* LikeButton.m */; };
 		E4E07B501AE51FD900E3E13A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B4F1AE51FD900E3E13A /* main.m */; };
 		E4E07B531AE51FD900E3E13A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B521AE51FD900E3E13A /* AppDelegate.m */; };
 		E4E07B561AE51FD900E3E13A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E07B551AE51FD900E3E13A /* ViewController.m */; };
@@ -80,6 +81,8 @@
 		E4B4C9921AF6F9BD00411C3D /* angle-mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "angle-mask@2x.png"; sourceTree = "<group>"; };
 		E4B4C9991AF6FA3500411C3D /* CircleSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSpinner.h; sourceTree = "<group>"; };
 		E4B4C99A1AF6FA3500411C3D /* CircleSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSpinner.m; sourceTree = "<group>"; };
+		E4DE66BD1AF7908300335AF8 /* LikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeButton.h; sourceTree = "<group>"; };
+		E4DE66BE1AF7908400335AF8 /* LikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeButton.m; sourceTree = "<group>"; };
 		E4E07B4A1AE51FD900E3E13A /* Colstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E07B4E1AE51FD900E3E13A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4E07B4F1AE51FD900E3E13A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 				E4E07B511AE51FD900E3E13A /* AppDelegate.h */,
 				E4E07B521AE51FD900E3E13A /* AppDelegate.m */,
 				E4B4C9991AF6FA3500411C3D /* CircleSpinner.h */,
+				E4DE66BD1AF7908300335AF8 /* LikeButton.h */,
+				E4DE66BE1AF7908400335AF8 /* LikeButton.m */,
 				E4B4C99A1AF6FA3500411C3D /* CircleSpinner.m */,
 				E4E07B541AE51FD900E3E13A /* ViewController.h */,
 				E4E07B551AE51FD900E3E13A /* ViewController.m */,
@@ -405,6 +410,7 @@
 				E4E07B8F1AE5DF0B00E3E13A /* User.m in Sources */,
 				E4E07B561AE51FD900E3E13A /* ViewController.m in Sources */,
 				E49ABA801AF69AFA00D8D820 /* MediaFullScreenViewController.m in Sources */,
+				E4DE66BF1AF7908400335AF8 /* LikeButton.m in Sources */,
 				E4E07B531AE51FD900E3E13A /* AppDelegate.m in Sources */,
 				E4E07B501AE51FD900E3E13A /* main.m in Sources */,
 				E4B4C99B1AF6FA3500411C3D /* CircleSpinner.m in Sources */,
