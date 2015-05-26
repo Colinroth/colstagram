@@ -29,11 +29,13 @@ NSString * const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewC
     // Do any additional setup after loading the view.
     
     NSString *urlString = [NSString stringWithFormat:@"https://instagram.com/oauth/authorize/?client_id=%@&scope=likes+comments+relationships&redirect_uri=%@&response_type=token", [DataSource instagramClientID], [self redirectURI]];
+
     NSURL *url = [NSURL URLWithString:urlString];
     
     if (url) {
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         [self.webView loadRequest:request];
+        self.webView.dataDetectorTypes = UIDataDetectorTypeAll;
     }
 }
 
@@ -46,6 +48,8 @@ NSString * const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewC
     
     self.webView = webView;
     self.view = webView;
+    
+//    [self.view addSubview:self.backButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,6 +83,11 @@ NSString * const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewC
     }
     return YES;
 }
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    NSLog(@"finished");
+}
+
 
 /*
 #pragma mark - Navigation

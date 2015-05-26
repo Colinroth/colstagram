@@ -49,7 +49,7 @@
     
     switch (_likeButtonState) {
         case LikeStateLiked:
-        case likeStateUnliking:
+        case LikeStateUnliking:
             imageName = kLikedStateImage;
             break;
             
@@ -61,7 +61,7 @@
     
     switch (_likeButtonState) {
         case LikeStateLiking:
-            case likeStateUnliking:
+            case LikeStateUnliking:
             self.spinnerView.hidden = NO;
             self.userInteractionEnabled = NO;
             break;

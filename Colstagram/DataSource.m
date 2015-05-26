@@ -47,7 +47,7 @@
         NSURL *baseURL = [NSURL URLWithString:@"https://api.instagram.com/v1/"];
         self.instagramOperationManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:baseURL];
         
-        AFJSONRequestSerializer *jsonSerializer = [AFJSONRequestSerializer serializer];
+        AFJSONResponseSerializer *jsonSerializer = [AFJSONResponseSerializer serializer];
         
         AFImageResponseSerializer *imageSerializer = [AFImageResponseSerializer serializer];
         imageSerializer.imageScale = 1.0;
@@ -133,15 +133,22 @@
         self.isRefreshing = YES;
         
         NSString *minID = [[self.mediaItems firstObject] idNumber];
-        NSDictionary *parameters = @{@"min_id": minID};
         
-        [self populateDataWithParameters:parameters completionHandler:^(NSError *error) {
-            self.isRefreshing = NO;
+        // if min_id is nil dont do it
+        if (minID != nil) {
+            NSDictionary *parameters = @{@"min_id": minID};
+
+            [self populateDataWithParameters:parameters completionHandler:^(NSError *error) {
+                self.isRefreshing = NO;
+                
+                if (completionHandler) {
+                    completionHandler(error);
+                }
+            }];
             
-            if (completionHandler) {
-                completionHandler(error);
-            }
-        }];
+        } else {
+            self.isRefreshing = NO;
+        }
     }
 }
 
@@ -296,7 +303,7 @@
 
 #pragma mark - Liking Media Items
 
--(void) toggleLikeOnMediaItem:(Media *)mediaItem {
+- (void) toggleLikeOnMediaItem:(Media *)mediaItem {
     NSString *urlString = [NSString stringWithFormat:@"media/%@/likes", mediaItem.idNumber];
     NSDictionary *parameters = @{@"access_token": self.accessToken};
     
@@ -311,8 +318,10 @@
             mediaItem.likeState = LikeStateNotLiked;
             [self reloadMediaItem:mediaItem];
         }];
+        
     } else if (mediaItem.likeState == LikeStateLiked) {
-        mediaItem.likeState = likeStateUnliking;
+        
+        mediaItem.likeState = LikeStateUnliking;
         
         [self.instagramOperationManager DELETE:urlString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
             mediaItem.likeState = LikeStateNotLiked;
@@ -321,15 +330,15 @@
             mediaItem.likeState = LikeStateLiked;
             [self reloadMediaItem:mediaItem];
         }];
+        
     }
     
     [self reloadMediaItem:mediaItem];
 }
 
--(void) reloadMediaItem: (Media *) mediaItem {
+- (void) reloadMediaItem:(Media *)mediaItem {
     NSMutableArray *mutableArrayWithKVO = [self mutableArrayValueForKey:@"mediaItems"];
     NSUInteger index = [mutableArrayWithKVO indexOfObject:mediaItem];
     [mutableArrayWithKVO replaceObjectAtIndex:index withObject:mediaItem];
 }
-
 @end
