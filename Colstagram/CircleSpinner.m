@@ -15,17 +15,17 @@
 @end
 
 @implementation CircleSpinner
-
--(CAShapeLayer*)circleLayer {
-    if (!_circleLayer) {
+- (CAShapeLayer*)circleLayer {
+    if(!_circleLayer) {
         CGPoint arcCenter = CGPointMake(self.radius+self.strokeThickness/2+5, self.radius+self.strokeThickness/2+5);
         CGRect rect = CGRectMake(0, 0, arcCenter.x*2, arcCenter.y*2);
         
-        UIBezierPath* smootherPath = [UIBezierPath bezierPathWithArcCenter:arcCenter
+        UIBezierPath* smoothedPath = [UIBezierPath bezierPathWithArcCenter:arcCenter
                                                                     radius:self.radius
                                                                 startAngle:M_PI*3/2
                                                                   endAngle:M_PI/2+M_PI*5
                                                                  clockwise:YES];
+        
         _circleLayer = [CAShapeLayer layer];
         _circleLayer.contentsScale = [[UIScreen mainScreen] scale];
         _circleLayer.frame = rect;
@@ -33,8 +33,8 @@
         _circleLayer.strokeColor = self.strokeColor.CGColor;
         _circleLayer.lineWidth = self.strokeThickness;
         _circleLayer.lineCap = kCALineCapRound;
-        _circleLayer.lineJoin = kCALineCapRound;
-        _circleLayer.path = smootherPath.CGPath;
+        _circleLayer.lineJoin = kCALineJoinBevel;
+        _circleLayer.path = smoothedPath.CGPath;
         
         CALayer *maskLayer = [CALayer layer];
         maskLayer.contents = (id)[[UIImage imageNamed:@"angle-mask"] CGImage];
@@ -49,6 +49,7 @@
         animation.toValue = @(M_PI*2);
         animation.duration = animationDuration;
         animation.timingFunction = linearCurve;
+        animation.removedOnCompletion = NO;
         animation.repeatCount = INFINITY;
         animation.fillMode = kCAFillModeForwards;
         animation.autoreverses = NO;
@@ -60,24 +61,28 @@
         animationGroup.removedOnCompletion = NO;
         animationGroup.timingFunction = linearCurve;
         
-        CABasicAnimation *strokeEndAnimation = [CABasicAnimation animationWithKeyPath:@"strokeStart"];
-        strokeEndAnimation.fromValue = @0.015;
+        CABasicAnimation *strokeStartAnimation = [CABasicAnimation animationWithKeyPath:@"strokeStart"];
+        strokeStartAnimation.fromValue = @0.015;
+        strokeStartAnimation.toValue = @0.515;
+        
+        CABasicAnimation *strokeEndAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+        strokeEndAnimation.fromValue = @0.485;
         strokeEndAnimation.toValue = @0.985;
         
-        animationGroup.animations = @[strokeEndAnimation, strokeEndAnimation];
+        animationGroup.animations = @[strokeStartAnimation, strokeEndAnimation];
         [_circleLayer addAnimation:animationGroup forKey:@"progress"];
+        
     }
-    
     return _circleLayer;
 }
 
--(void)layoutAnimatedLayer {
+- (void)layoutAnimatedLayer {
     [self.layer addSublayer:self.circleLayer];
     
     self.circleLayer.position = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds));
 }
 
--(void)willMoveToSuperview:(UIView *)newSuperview {
+- (void)willMoveToSuperview:(UIView *)newSuperview {
     if (newSuperview != nil) {
         [self layoutAnimatedLayer];
     }
@@ -87,7 +92,7 @@
     }
 }
 
--(void)setFrame:(CGRect)frame {
+- (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
     
     if (self.superview != nil) {
@@ -95,7 +100,7 @@
     }
 }
 
--(void)setRadius:(CGFloat)radius {
+- (void)setRadius:(CGFloat)radius {
     _radius = radius;
     
     [_circleLayer removeFromSuperlayer];
@@ -104,17 +109,18 @@
     [self layoutAnimatedLayer];
 }
 
--(void)setStrokeColor:(UIColor *)strokeColor {
+- (void)setStrokeColor:(UIColor *)strokeColor {
     _strokeColor = strokeColor;
     _circleLayer.strokeColor = strokeColor.CGColor;
 }
 
--(void)setStrokeThickness:(CGFloat)strokeThickness {
+- (void)setStrokeThickness:(CGFloat)strokeThickness {
     _strokeThickness = strokeThickness;
     _circleLayer.lineWidth = _strokeThickness;
 }
 
--(id)initWithFrame:(CGRect)frame {
+- (id)initWithFrame:(CGRect)frame
+{
     self = [super initWithFrame:frame];
     if (self) {
         self.strokeThickness = 1;
@@ -124,7 +130,7 @@
     return self;
 }
 
--(CGSize)sizeThatFits:(CGSize)size {
+- (CGSize)sizeThatFits:(CGSize)size {
     return CGSizeMake((self.radius+self.strokeThickness/2+5)*2, (self.radius+self.strokeThickness/2+5)*2);
 }
 

@@ -12,7 +12,7 @@
 @interface LoginViewController () <UIWebViewDelegate>
 
 @property (nonatomic, weak) UIWebView *webView;
-@property (nonatomic, strong) UIButton *backButton;
+//@property (nonatomic, strong) UIButton *backButton;
 
 @end
 
@@ -29,23 +29,27 @@ NSString * const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewC
     // Do any additional setup after loading the view.
     
     NSString *urlString = [NSString stringWithFormat:@"https://instagram.com/oauth/authorize/?client_id=%@&scope=likes+comments+relationships&redirect_uri=%@&response_type=token", [DataSource instagramClientID], [self redirectURI]];
+    
     NSURL *url = [NSURL URLWithString:urlString];
     
     if (url) {
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         [self.webView loadRequest:request];
+        self.webView.dataDetectorTypes = UIDataDetectorTypeAll;
     }
 }
 
 - (void)loadView {
     UIWebView *webView = [[UIWebView alloc] init];
     webView.delegate = self;
-    
+/*
     self.backButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.backButton setEnabled:NO];
-    
+*/    
     self.webView = webView;
     self.view = webView;
+    
+    //    [self.view addSubview:self.backButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,14 +84,18 @@ NSString * const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewC
     return YES;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    NSLog(@"finished");
 }
-*/
+
+
+/*
+ #pragma mark - Navigation
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

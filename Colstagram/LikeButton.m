@@ -10,7 +10,7 @@
 #import "CircleSpinner.h"
 
 #define kLikedStateImage @"heart-full"
-#define KUnlikedStateImage @"heart-empty"
+#define kUnlikedStateImage @"heart-empty"
 
 @interface LikeButton ()
 
@@ -49,19 +49,19 @@
     
     switch (_likeButtonState) {
         case LikeStateLiked:
-        case likeStateUnliking:
+        case LikeStateUnliking:
             imageName = kLikedStateImage;
             break;
             
         case LikeStateNotLiked:
         case LikeStateLiking:
-            imageName = KUnlikedStateImage;
+            imageName = kUnlikedStateImage;
             
     }
     
     switch (_likeButtonState) {
         case LikeStateLiking:
-            case likeStateUnliking:
+            case LikeStateUnliking:
             self.spinnerView.hidden = NO;
             self.userInteractionEnabled = NO;
             break;
