@@ -67,22 +67,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Colstagram/ImageTableViewController.m"
-            timestampString = "457223769.076749"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
-            landmarkName = "@implementation ImageTableViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Colstagram/DataSource.m"
             timestampString = "456968135.005174"
             startingColumnNumber = "9223372036854775807"
@@ -168,7 +152,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "365"
-            endingLineNumber = "365">
+            endingLineNumber = "365"
+            landmarkName = "-commentOnMediaItem:withCommentText:"
+            landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
