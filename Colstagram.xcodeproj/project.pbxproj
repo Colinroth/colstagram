@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D046EC76B342ED2F176E316 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAC1A885F3F78505347ADF8 /* libPods.a */; };
+		E40615281B40813500E1A619 /* ComposeCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E40615271B40813500E1A619 /* ComposeCommentView.m */; };
 		E46B46841AF6C4DE00BA4139 /* MediaFullScreenAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E46B46831AF6C4DE00BA4139 /* MediaFullScreenAnimator.m */; };
 		E49665461AF56899009789B9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49665451AF56899009789B9 /* LoginViewController.m */; };
 		E49ABA801AF69AFA00D8D820 /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49ABA7F1AF69AFA00D8D820 /* MediaFullScreenViewController.m */; };
@@ -56,6 +57,8 @@
 /* Begin PBXFileReference section */
 		6FAC1A885F3F78505347ADF8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		92731BF2DF886192DFC239A9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E40615261B40813500E1A619 /* ComposeCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeCommentView.h; sourceTree = "<group>"; };
+		E40615271B40813500E1A619 /* ComposeCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentView.m; sourceTree = "<group>"; };
 		E46B46821AF6C4DE00BA4139 /* MediaFullScreenAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenAnimator.h; sourceTree = "<group>"; };
 		E46B46831AF6C4DE00BA4139 /* MediaFullScreenAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenAnimator.m; sourceTree = "<group>"; };
 		E49665441AF56899009789B9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				E4E07B551AE51FD900E3E13A /* ViewController.m */,
 				E4E07B881AE52A1400E3E13A /* ImageTableViewController.h */,
 				E4E07B891AE52A1400E3E13A /* ImageTableViewController.m */,
+				E40615261B40813500E1A619 /* ComposeCommentView.h */,
+				E40615271B40813500E1A619 /* ComposeCommentView.m */,
 				E46B46821AF6C4DE00BA4139 /* MediaFullScreenAnimator.h */,
 				E46B46831AF6C4DE00BA4139 /* MediaFullScreenAnimator.m */,
 				E49ABA7E1AF69AFA00D8D820 /* MediaFullScreenViewController.h */,
@@ -405,6 +410,7 @@
 				E4E07B951AE5E23700E3E13A /* Comment.m in Sources */,
 				E4E07B921AE5DFF800E3E13A /* Media.m in Sources */,
 				E4E07B9E1AE6699400E3E13A /* MediaTableViewCell.m in Sources */,
+				E40615281B40813500E1A619 /* ComposeCommentView.m in Sources */,
 				E4E07B981AE5E38100E3E13A /* DataSource.m in Sources */,
 				E49665461AF56899009789B9 /* LoginViewController.m in Sources */,
 				E4E07B8F1AE5DF0B00E3E13A /* User.m in Sources */,
