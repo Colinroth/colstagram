@@ -27,7 +27,7 @@ NSString * const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewC
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [DataSource sharedInstance];
     NSString *urlString = [NSString stringWithFormat:@"https://instagram.com/oauth/authorize/?client_id=%@&scope=likes+comments+relationships&redirect_uri=%@&response_type=token", [DataSource instagramClientID], [self redirectURI]];
 
     NSURL *url = [NSURL URLWithString:urlString];

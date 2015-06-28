@@ -44,6 +44,8 @@
     self = [super init];
     
     if (self) {
+        self.mediaItems = @[];
+
         NSURL *baseURL = [NSURL URLWithString:@"https://api.instagram.com/v1/"];
         self.instagramOperationManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:baseURL];
         
@@ -147,6 +149,7 @@
             }];
             
         } else {
+            NSLog(@"minID is nil!");
             self.isRefreshing = NO;
         }
     }
@@ -333,7 +336,7 @@
         
     }
     
-    [self reloadMediaItem:mediaItem];
+   // [self reloadMediaItem:mediaItem];
 }
 
 - (void) reloadMediaItem:(Media *)mediaItem {

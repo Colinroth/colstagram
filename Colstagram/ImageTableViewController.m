@@ -33,8 +33,15 @@
     [self.refreshControl addTarget:self action:@selector(refreshControlDidFire:) forControlEvents:UIControlEventValueChanged];
     
     [self.tableView registerClass:[MediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
-    [self.refreshControl beginRefreshing];
-    [self.refreshControl endRefreshing];
+[self.refreshControl beginRefreshing];
+    //make timer
+    int64_t delayInSeconds = 0.5;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [self refreshControlDidFire:self.refreshControl];
+        [self.refreshControl endRefreshing];
+        [self.tableView reloadData];
+    });
    }
 
 //make timer
