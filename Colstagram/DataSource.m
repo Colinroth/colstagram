@@ -336,6 +336,8 @@
     [self reloadMediaItem:mediaItem];
 }
 
+//-(void) numberOfLikes: (Media *)mediaIt
+
 - (void) reloadMediaItem:(Media *)mediaItem {
     NSMutableArray *mutableArrayWithKVO = [self mutableArrayValueForKey:@"mediaItems"];
     NSUInteger index = [mutableArrayWithKVO indexOfObject:mediaItem];

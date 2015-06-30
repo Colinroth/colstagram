@@ -26,6 +26,7 @@
 
 @property (nonatomic, strong) LikeButton *likeButton;
 @property (nonatomic, strong) ComposeCommentView *commentView;
+@property (nonatomic, strong) UILabel *likeLabel;
 @end
 
 static UIFont *lightFont;
@@ -75,6 +76,11 @@ static NSParagraphStyle *paragraphStyle;
         [self.likeButton addTarget:self action:@selector(likePressed:) forControlEvents:UIControlEventTouchUpInside];
         self.likeButton.backgroundColor = usernameLabelGray;
         
+        self.likeLabel = [[UILabel alloc] init];
+        self.likeLabel.numberOfLines = 0;
+        self.likeLabel.text = [self.mediaItem.numberOfLikes stringValue];
+        
+        
         self.commentView = [[ComposeCommentView alloc] init];
         self.commentView.delegate = self;
         
@@ -116,6 +122,9 @@ static NSParagraphStyle *paragraphStyle;
                                                                           constant:100];
         
         [self.contentView addConstraints:@[self.imageHeightConstraint, self.usernameAndCaptionLabelHeightConstraint, self.commentLabelHeightConstraint]];
+        
+        [self.contentView addSubview:self.likeLabel];
+        self.likeLabel.frame = self.likeButton.frame;
         
     }
     
@@ -197,6 +206,7 @@ static NSParagraphStyle *paragraphStyle;
     self.commentLabel.attributedText = [self commentString];
     self.likeButton.likeButtonState = mediaItem.likeState;
     self.commentView.text = mediaItem.temporaryComment;
+    
     }
 
 +(CGFloat) heightForMediaItem:(Media *)mediaItem width:(CGFloat)width {
