@@ -34,8 +34,8 @@
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(refreshControlDidFire:) forControlEvents:UIControlEventValueChanged];
     
-    [self.tableView registerClass:[MediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
-<<<<<<< HEAD
+    
+//<<<<<<< HEAD
 [self.refreshControl beginRefreshing];
     //make timer
     int64_t delayInSeconds = 0.5;
@@ -45,9 +45,10 @@
         [self.refreshControl endRefreshing];
         [self.tableView reloadData];
     });
-=======
+//=======
     [self.refreshControl beginRefreshing];
     [self.refreshControl endRefreshing];
+    [self.tableView registerClass:[MediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
     
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;
     
@@ -60,7 +61,7 @@
                                              selector:@selector(keyboardWillHide:)
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
->>>>>>> comment-view
+//>>>>>>> comment-view
    }
 
 //make timer
