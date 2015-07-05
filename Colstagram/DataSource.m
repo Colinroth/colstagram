@@ -31,6 +31,8 @@
 
 @implementation DataSource
 
+NSString *const ImageFinishedNotification = @"ImageFinishedNotification";
+
 +(instancetype) sharedInstance {
     static dispatch_once_t once;
     static id sharedInstance;
