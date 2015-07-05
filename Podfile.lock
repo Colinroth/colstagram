@@ -20,14 +20,35 @@ PODS:
   - AFNetworking/UIKit (2.5.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Bugsnag (4.0.7):
+    - Bugsnag/no-arc (= 4.0.7)
+  - Bugsnag/no-arc (4.0.7)
+  - Mixpanel (2.8.1):
+    - Mixpanel/Mixpanel (= 2.8.1)
+  - Mixpanel/Mixpanel (2.8.1):
+    - Mixpanel/MPCategoryHelpers
+  - Mixpanel/MPCategoryHelpers (2.8.1)
   - UICKeyChainStore (2.0.4)
 
 DEPENDENCIES:
   - AFNetworking
+  - Bugsnag (from `https://github.com/bugsnag/bugsnag-cocoa.git`)
+  - Mixpanel
   - UICKeyChainStore
+
+EXTERNAL SOURCES:
+  Bugsnag:
+    :git: https://github.com/bugsnag/bugsnag-cocoa.git
+
+CHECKOUT OPTIONS:
+  Bugsnag:
+    :commit: 94779161ebb4122c1753946c45e8c5b8350f72b0
+    :git: https://github.com/bugsnag/bugsnag-cocoa.git
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
+  Bugsnag: 5861d8519d30063abe7b3fcdcf4114a6dddab27a
+  Mixpanel: 93c4825025e6380ced273ed7178496282e385077
   UICKeyChainStore: 69eb0c3a6f669bccf16ba88de3b9069b71501361
 
 COCOAPODS: 0.37.0

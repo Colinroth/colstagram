@@ -220,6 +220,7 @@
 }
 
 -(void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
     NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
     if (indexPath) {
         [self.tableView deselectRowAtIndexPath:indexPath animated:animated];
@@ -227,7 +228,7 @@
 }
 
 -(void) viewWillDisappear:(BOOL)animated {
-    
+    [super viewWillDisappear:YES];
 }
 
 -(void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {

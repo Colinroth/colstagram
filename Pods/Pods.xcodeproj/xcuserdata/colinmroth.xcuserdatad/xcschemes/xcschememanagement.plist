@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Bugsnag.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Mixpanel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-UICKeyChainStore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>99899D9AD5419EB07A650115</key>
+		<key>83E08749CA46759985E59F5C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A29C4A893BF322DA1BA187DC</key>
+		<key>B240282A628BB51FE6778063</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C93374B69866BB17EFA6D51F</key>
+		<key>B6116E9B8BA8E25DDBE1BF88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3B84C4ACC86E316CA4A0B22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F23ED4BC72FDA5FBBFAFFD3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

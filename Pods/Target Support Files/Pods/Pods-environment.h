@@ -48,6 +48,36 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 3
 
+// Bugsnag
+#define COCOAPODS_POD_AVAILABLE_Bugsnag
+#define COCOAPODS_VERSION_MAJOR_Bugsnag 4
+#define COCOAPODS_VERSION_MINOR_Bugsnag 0
+#define COCOAPODS_VERSION_PATCH_Bugsnag 7
+
+// Bugsnag/no-arc
+#define COCOAPODS_POD_AVAILABLE_Bugsnag_no_arc
+#define COCOAPODS_VERSION_MAJOR_Bugsnag_no_arc 4
+#define COCOAPODS_VERSION_MINOR_Bugsnag_no_arc 0
+#define COCOAPODS_VERSION_PATCH_Bugsnag_no_arc 7
+
+// Mixpanel
+#define COCOAPODS_POD_AVAILABLE_Mixpanel
+#define COCOAPODS_VERSION_MAJOR_Mixpanel 2
+#define COCOAPODS_VERSION_MINOR_Mixpanel 8
+#define COCOAPODS_VERSION_PATCH_Mixpanel 1
+
+// Mixpanel/MPCategoryHelpers
+#define COCOAPODS_POD_AVAILABLE_Mixpanel_MPCategoryHelpers
+#define COCOAPODS_VERSION_MAJOR_Mixpanel_MPCategoryHelpers 2
+#define COCOAPODS_VERSION_MINOR_Mixpanel_MPCategoryHelpers 8
+#define COCOAPODS_VERSION_PATCH_Mixpanel_MPCategoryHelpers 1
+
+// Mixpanel/Mixpanel
+#define COCOAPODS_POD_AVAILABLE_Mixpanel_Mixpanel
+#define COCOAPODS_VERSION_MAJOR_Mixpanel_Mixpanel 2
+#define COCOAPODS_VERSION_MINOR_Mixpanel_Mixpanel 8
+#define COCOAPODS_VERSION_PATCH_Mixpanel_Mixpanel 1
+
 // UICKeyChainStore
 #define COCOAPODS_POD_AVAILABLE_UICKeyChainStore
 #define COCOAPODS_VERSION_MAJOR_UICKeyChainStore 2

@@ -1,6 +1,8 @@
+GCC_ENABLE_CPP_EXCEPTIONS = YES
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/UICKeyChainStore"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/UICKeyChainStore"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-AFNetworking" -l"Pods-UICKeyChainStore" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Bugsnag" "${PODS_ROOT}/Headers/Public/Mixpanel" "${PODS_ROOT}/Headers/Public/UICKeyChainStore"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/Mixpanel/Mixpanel"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/Bugsnag" -isystem "${PODS_ROOT}/Headers/Public/Mixpanel" -isystem "${PODS_ROOT}/Headers/Public/UICKeyChainStore"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"MPCategoryHelpers" -l"Pods-AFNetworking" -l"Pods-Bugsnag" -l"Pods-Mixpanel" -l"Pods-UICKeyChainStore" -l"c++" -l"icucore" -framework "Accelerate" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

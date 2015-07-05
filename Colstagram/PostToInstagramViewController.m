@@ -8,6 +8,7 @@
 
 #import "PostToInstagramViewController.h"
 #import "DataSource.h"
+#import "Bugsnag.h"
 
 @interface PostToInstagramViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIAlertViewDelegate, UIDocumentInteractionControllerDelegate>
 
@@ -395,6 +396,8 @@
 
 -(void)documentInteractionController:(UIDocumentInteractionController *)controller didEndSendingToApplication:(NSString *)application {
     [[NSNotificationCenter defaultCenter] postNotificationName:ImageFinishedNotification object:self];
+    
+    [Bugsnag notify:[NSException exceptionWithName:@"ExceptionName" reason:@"Test Error" userInfo:nil]];
 }
 
 @end

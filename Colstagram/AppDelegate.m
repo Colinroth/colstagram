@@ -10,6 +10,8 @@
 #import "ImageTableViewController.h"
 #import "LoginViewController.h"
 #import "DataSource.h"
+#import "Bugsnag.h"
+#import "Mixpanel.h"
 
 
 @interface AppDelegate ()
@@ -21,6 +23,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    #define MIXPANEL_TOKEN @"8560b59ff7446270c4b56352dc9c9f62"
+    
+    // Initialize the library with your
+    // Mixpanel project token, MIXPANEL_TOKEN
+    [Mixpanel sharedInstanceWithToken:MIXPANEL_TOKEN];
+
+    
+    [Bugsnag startBugsnagWithApiKey:@"d5f336ce4ab768c5437601be6d6b15cb"];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     [DataSource sharedInstance];
