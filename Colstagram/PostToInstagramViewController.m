@@ -191,7 +191,7 @@
             NSUInteger newIndex = self.filterImages.count;
             
             [self.filterImages addObject:image];
-            [self.filterImages addObject:filterTitle];
+            [self.filterTitles addObject:filterTitle];
             
             [self.filterCollectionView insertItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:newIndex inSection:0]]];
         });
@@ -297,7 +297,7 @@
                                  @"inputRVector", [CIVector vectorWithX:0.0 Y:1.0 Z:0.0 W:0.0],
                                  @"inputGVector", [CIVector vectorWithX:0.0 Y:1.0 Z:0.0 W:0.0],
                                  @"inputBVector", [CIVector vectorWithX:0.0 Y:1.0 Z:0.0 W:0.0],
-                                 @"inputAvector", [CIVector vectorWithX:0.0 Y:0.01 Z:0.0 W:0.0],
+                                 @"inputAVector", [CIVector vectorWithX:0.0 Y:0.01 Z:0.0 W:0.0],
                                  @"inputBiasVector", [CIVector vectorWithX:0.0 Y:0.0 Z:0.0 W:0.0],
                                  nil];
         
