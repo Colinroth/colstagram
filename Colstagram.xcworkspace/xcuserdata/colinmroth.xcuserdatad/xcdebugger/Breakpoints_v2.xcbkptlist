@@ -112,31 +112,31 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__36-[DataSource toggleLikeOnMediaItem:]_block_invoke"
+                  symbolName = "-[DataSource toggleLikeOnMediaItem:]"
                   moduleName = "Colstagram"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/colinmroth/Documents/iamcolinroth/projects/Colstagram/Colstagram/DataSource.m"
-                  timestampString = "457319922.753378"
+                  timestampString = "457747706.466631"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "317"
                   endingLineNumber = "317"
-                  offsetFromSymbolStart = "161">
+                  offsetFromSymbolStart = "365">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__36-[DataSource toggleLikeOnMediaItem:]_block_invoke226"
+                  symbolName = "__36-[DataSource toggleLikeOnMediaItem:]_block_invoke"
                   moduleName = "Colstagram"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/colinmroth/Documents/iamcolinroth/projects/Colstagram/Colstagram/DataSource.m"
-                  timestampString = "457319922.75361"
+                  timestampString = "457747706.466818"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "317"
                   endingLineNumber = "317"
-                  offsetFromSymbolStart = "71">
+                  offsetFromSymbolStart = "68">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -155,53 +155,6 @@
             endingLineNumber = "367"
             landmarkName = "-commentOnMediaItem:withCommentText:"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__49-[DataSource commentOnMediaItem:withCommentText:]_block_invoke_2"
-                  moduleName = "Colstagram"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/colinmroth/Documents/iamcolinroth/projects/Colstagram/Colstagram/DataSource.m"
-                  timestampString = "457319922.771097"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "367"
-                  endingLineNumber = "367"
-                  offsetFromSymbolStart = "270">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__49-[DataSource commentOnMediaItem:withCommentText:]_block_invoke_2"
-                  moduleName = "Colstagram"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/colinmroth/Documents/iamcolinroth/projects/Colstagram/Colstagram/DataSource.m"
-                  timestampString = "457319922.771325"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "367"
-                  endingLineNumber = "367"
-                  offsetFromSymbolStart = "306">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__49-[DataSource commentOnMediaItem:withCommentText:]_block_invoke255"
-                  moduleName = "Colstagram"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/colinmroth/Documents/iamcolinroth/projects/Colstagram/Colstagram/DataSource.m"
-                  timestampString = "457319922.771509"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "367"
-                  endingLineNumber = "367"
-                  offsetFromSymbolStart = "67">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
