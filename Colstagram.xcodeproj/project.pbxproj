@@ -17,6 +17,8 @@
 		E406153F1B43076000E1A619 /* CropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E406153E1B43076000E1A619 /* CropImageViewController.m */; };
 		E40615421B4416FB00E1A619 /* ImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E40615411B4416FB00E1A619 /* ImageLibraryViewController.m */; };
 		E40615451B488B2100E1A619 /* PostToInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E40615441B488B2100E1A619 /* PostToInstagramViewController.m */; };
+		E40615481B4985DE00E1A619 /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E40615471B4985DE00E1A619 /* UserTests.m */; };
+		E406154A1B4988A500E1A619 /* CommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E40615491B4988A500E1A619 /* CommentTests.m */; };
 		E46B46841AF6C4DE00BA4139 /* MediaFullScreenAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E46B46831AF6C4DE00BA4139 /* MediaFullScreenAnimator.m */; };
 		E49665461AF56899009789B9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49665451AF56899009789B9 /* LoginViewController.m */; };
 		E49ABA801AF69AFA00D8D820 /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49ABA7F1AF69AFA00D8D820 /* MediaFullScreenViewController.m */; };
@@ -83,6 +85,8 @@
 		E40615431B488B2100E1A619 /* PostToInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToInstagramViewController.h; sourceTree = "<group>"; };
 		E40615441B488B2100E1A619 /* PostToInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToInstagramViewController.m; sourceTree = "<group>"; };
 		E40615461B49719700E1A619 /* Colstagram-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colstagram-Prefix.pch"; sourceTree = "<group>"; };
+		E40615471B4985DE00E1A619 /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
+		E40615491B4988A500E1A619 /* CommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTests.m; sourceTree = "<group>"; };
 		E46B46821AF6C4DE00BA4139 /* MediaFullScreenAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenAnimator.h; sourceTree = "<group>"; };
 		E46B46831AF6C4DE00BA4139 /* MediaFullScreenAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenAnimator.m; sourceTree = "<group>"; };
 		E49665441AF56899009789B9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -260,6 +264,8 @@
 			isa = PBXGroup;
 			children = (
 				E4E07B691AE51FD900E3E13A /* ColstagramTests.m */,
+				E40615471B4985DE00E1A619 /* UserTests.m */,
+				E40615491B4988A500E1A619 /* CommentTests.m */,
 				E4E07B671AE51FD900E3E13A /* Supporting Files */,
 			);
 			path = ColstagramTests;
@@ -477,6 +483,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E40615481B4985DE00E1A619 /* UserTests.m in Sources */,
+				E406154A1B4988A500E1A619 /* CommentTests.m in Sources */,
 				E4E07B6A1AE51FD900E3E13A /* ColstagramTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
